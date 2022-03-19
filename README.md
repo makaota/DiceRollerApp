@@ -71,4 +71,7 @@ implementation 'com.daimajia.androidanimations:library:2.4@aar'\
 * Fancy Toast Messages  
 implementation 'io.github.shashank02051997:FancyToast:2.0.1'
 
+# Google Play Store
+https://play.google.com/store/apps/details?id=com.makaota.dicerollerapp
+
 
