@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/settingsLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#ffe000"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="false">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="DICE OPTIONS"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/electric_red"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <Button
+                    android:id="@+id/btn_reset_dice_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="RESET"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How many dice?"
+                android:textSize="17dp"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="60dp"
+                android:textStyle="bold"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_play_1_die"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/rounded_button"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/btn_play_2_dice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/rounded_button"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/btn_play_3_dice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/rounded_button"
+                        android:text="3" />
+
+                    <Button
+                        android:id="@+id/btn_play_4_dice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/rounded_button"
+                        android:text="4" />
+
+
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="155dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_play_5_dice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/btn_play_6_dice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="6" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:text="Choose dice image"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="255dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_alea"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/alea_4"
+                        android:tooltipText="Alea"/>
+
+                    <ImageView
+                        android:id="@+id/iv_alea_a"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/alea_a4"
+                        android:tooltipText="Alea A"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dado"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/dado_4"
+                        android:tooltipText="Dado"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/dice_four_black"
+                        android:tooltipText="Black Dice"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dice_a_5sqb"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/dice4a"
+                        android:tooltipText="Dice A 5sqb"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dice_perspective"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/perspective_dice_four"
+                        android:tooltipText="Perspective"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dicey"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/dicey_6"
+                        android:tooltipText="Dicey"/>
+
+                    <ImageView
+                        android:id="@+id/iv_kismet"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/kismet_six"
+                        android:tooltipText="Kismet"/>
+
+                    <ImageView
+                        android:id="@+id/iv_terning"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/terning6"
+                        android:tooltipText="Terning"/>
+
+                    <ImageView
+                        android:id="@+id/iv_u_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/u_plus4"
+                        android:tooltipText="U-PLUS"/>
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#ffe000"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="false">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="THEME OPTIONS"
+                android:fontFamily="sans-serif-black"
+                android:textSize="19sp"
+                android:textColor="@color/electric_red"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <Button
+                    android:id="@+id/btn_theme_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="RESET" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose background color theme"
+                android:textSize="17dp"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="110dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCornFlowerBlue"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="#6495ED"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"
+                        android:tooltipText="CornflowerBlue"/>
+
+                    <TextView
+                        android:id="@+id/tvWhite"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/white"
+                        android:tooltipText="White"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/tvMediumSeaGreen"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#3CB371"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="MediumSeaGreen"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvLightBlue"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#ADD8E6"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="LightBlue"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvDarkMagenta"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#8B008B"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="DarkMagenta"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvMagenta"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#FF00FF"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="Magenta"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvTomato"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#FF6347"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="Tomato"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvDarkShadeOfYellow"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#666600"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="DarkShadeOfYellow-Green"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvDarkPink"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#FF1493"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="DeepPink "
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvCyan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#00FFFF"
+                        android:background="@drawable/round_corner"
+                        android:tooltipText="Cyan"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/tvEnableToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="180dp"
+                android:text="Enable full screen toggle"
+                android:textColor="@color/electric_red"
+                android:fontFamily="sans-serif"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="208dp"
+                android:layout_marginBottom="15dp"
+                android:text="Enables/Disables toggle to switch in/off\nfull screen mode on main screen"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/fullScreenSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="170dp"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#ffe000"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="false">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="EXPERIENCE"
+                android:textColor="@color/electric_red"
+                android:fontFamily="sans-serif-black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <Button
+                    android:id="@+id/btn_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="RESET" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:text="Shake to roll"
+                android:textColor="@color/electric_red"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="94dp"
+                android:text="Roll the dice when shaking the device"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <CheckBox
+                    android:id="@+id/shakeToRoll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="58dp"
+                    android:checked="false" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="114dp"
+                android:fontFamily="sans-serif"
+                android:text="Rolling sound"
+                android:textColor="@color/electric_red"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="138dp"
+                android:text="Play sound when tapping the screen to roll\nthe dice (also works when shake to roll is \nturned on) "
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/rollingSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="190dp"
+                android:fontFamily="sans-serif"
+                android:text="Speak total"
+                android:textColor="@color/electric_red"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="214dp"
+                android:text="Speaks the added total of all the dices/die\nafter each roll"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <CheckBox
+                    android:id="@+id/speakTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="249dp"
+                android:fontFamily="sans-serif"
+                android:text="Vibrate"
+                android:textColor="@color/electric_red"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="273dp"
+                android:layout_marginBottom="10dp"
+                android:text="Vibrate the device when tapping the screen to roll\nthe dice (also works when shake to roll is \nturned on) "
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="240dp"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free Dice Roller App v1.1 \n Created by "
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/underdog_developer_logo"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank you very much for using this app! \n Courtesy from SA.Makaota "
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Dice Roller App</string>
+    <string name="title_activity_settings2">SettingsActivity2</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Dice Count</string>
+    <string name="sync_header">Experience</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Choose dice amount to play</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Shake</string>
+    <string name="sound">Sound</string>
+    <string name="attachment_title">Say Total</string>
+    <string name="vibrate">Vibrate</string>
+
+</resources>

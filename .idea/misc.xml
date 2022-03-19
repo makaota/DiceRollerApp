@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/dialog_bg.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/ic_done.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/ic_sad_emoji.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/ic_settings.xml" value="0.2157190635451505" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/round_corner.xml" value="0.25462962962962965" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/rounded_button.xml" value="0.38375" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/drawable/yes_btn_bg.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout-land/activity_dice.xml" value="0.25" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/activity_dice.xml" value="0.33" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/activity_main.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/activity_settings.xml" value="0.33" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/activity_start.xml" value="0.33" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/dice_list.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/dice_list_text_view.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/exit_dialog_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/list_items.xml" value="0.33" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/list_of_five_dice.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/list_of_four_dice.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/list_of_six_dice.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/list_of_three_dice.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/list_of_two_dice.xml" value="0.33" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/my_settings_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/layout/settings_activity.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Makaota/DiceRollerApp/app/src/main/res/xml/root_preferences.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="16" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
